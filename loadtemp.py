@@ -7,35 +7,9 @@
 
 
 import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta
+from datetime import timedelta
 import matplotlib.pyplot as plt
 import seaborn as sns
-import sklearn
-import xgboost as xgb
-import lightgbm as lgb
-import catboost as cb
-import statsmodels.api as sm
-import statsmodels.stats.api as sms
-import scipy.stats as stats
-import statsmodels.formula.api as smf
-import statsmodels.tsa.api as tsa
-import statsmodels.graphics.tsaplots as tsaplots
-import statsmodels.stats.diagnostic as diagnostic
-import statsmodels.tools.eval_measures as eval_measures
-import statsmodels.tsa.vector_ar.var_model as var_model
-from statsmodels.tsa.api import VAR
-from statsmodels.tsa.stattools import adfuller
-from statsmodels.tsa.ar_model import AutoReg
-import shap
-import lime
-import hyperopt
-import joblib
-from tqdm import tqdm
-import mlxtend
-import json
-from libtad import HolidaysService
-from libtad.datatypes.holidays import HolidayType
 
 
 # In[2]:
@@ -321,7 +295,6 @@ cleaned_data.to_csv('nordic_data_df.csv', index=False)
 
 import pandas as pd
 from statsmodels.tsa.statespace.sarimax import SARIMAX
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 import matplotlib.pyplot as plt
 
 # Assuming 'df' is your DataFrame and it's already indexed by date

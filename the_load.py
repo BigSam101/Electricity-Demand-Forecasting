@@ -8,35 +8,9 @@
 
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import seaborn as sns
-import sklearn
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
-import xgboost as xgb
-import lightgbm as lgb
-import catboost as cb
-import statsmodels.api as sm
-import statsmodels.stats.api as sms
-import scipy.stats as stats
-import statsmodels.formula.api as smf
-import statsmodels.tsa.api as tsa
-from statsmodels.tools.sm_exceptions import ValueWarning
-import statsmodels.graphics.tsaplots as tsaplots
-import statsmodels.stats.diagnostic as diagnostic
-import statsmodels.tools.eval_measures as eval_measures
-import statsmodels.tsa.vector_ar.var_model as var_model
-from statsmodels.tsa.api import VAR
-from statsmodels.tsa.statespace.sarimax import SARIMAX
-from statsmodels.tsa.stattools import acf, pacf
-from statsmodels.tsa.stattools import adfuller
-from statsmodels.tsa.ar_model import AutoReg
-import json
 import os
-import warnings
-from libtad import HolidaysService
-from libtad.datatypes.holidays import HolidayType
 
 
 # In[2]:

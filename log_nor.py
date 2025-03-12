@@ -15,40 +15,20 @@
 
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import seaborn as sns
-import sklearn
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import mean_squared_error
-from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
 from sklearn.ensemble import GradientBoostingRegressor
-import statsmodels.api as sm
-import statsmodels.stats.api as sms
-import scipy.stats as stats
-import statsmodels.formula.api as smf
-import statsmodels.tsa.api as tsa
-import statsmodels.graphics.tsaplots as tsaplots
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tools.sm_exceptions import ValueWarning
-import statsmodels.stats.diagnostic as diagnostic
-import statsmodels.tools.eval_measures as eval_measures
-import statsmodels.tsa.vector_ar.var_model as var_model
-from statsmodels.tsa.api import VAR
 from statsmodels.tsa.statespace.sarimax import SARIMAX
-from statsmodels.tsa.stattools import acf, pacf
 from statsmodels.tsa.stattools import adfuller
-from statsmodels.tsa.ar_model import AutoReg
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import StandardScaler
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-import json
 import warnings
-from libtad import HolidaysService
-from libtad.datatypes.holidays import HolidayType
-from joblib import load
 from joblib import dump
 import os
 
